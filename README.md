@@ -21,6 +21,7 @@
 1. Merge Branches - 
    
    In order to merge branch `Remote` into branch `Local`, we perform the following command
+   
         git checkout <LocalBranchName>
         git merge <RemoteBranchName>
 
