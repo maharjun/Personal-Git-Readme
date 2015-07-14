@@ -24,4 +24,17 @@
         git checkout <LocalBranchName>
         git merge <RemoteBranchName>
 
-2. Merge 
+2. Merge Options -
+
+   1. --no-commit
+      
+      This means that the merge will be performed and the results indexed but not committed. 
+      This allows one to inspect and test the merge before committing
+   
+   2. --squash
+      
+      This means that the merge will be performed but all changes in the `Remote` Branch will
+      be squashed together into a single commit and will not mix up the histories of the `Local`
+      and `Remote` branch. However, this also means that the new merge commit will not contain
+      as a parent, the commit of `Remote` branch that it merged with.
+3. 
